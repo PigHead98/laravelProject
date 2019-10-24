@@ -1,0 +1,54 @@
+.section-banner-experience #bg-han-thuyen {
+  background-image: url("/img/menu/banner.jpg");
+}
+
+.section-banner-experience #bg-han-thuyen .section-banner-text-title {
+  margin-bottom: 25px;
+}
+
+#six-img-menu .bg-img {
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#six-img-menu .bg-img .cover-layout {
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+#six-img-menu .bg-img:hover .img-zoom,
+#six-img-menu .bg-img:hover .cover-layout {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#six-img-menu .bg-img .img-zoom {
+  top: 0;
+  -webkit-transition: 0.6s all linear;
+  transition: 0.6s all linear;
+  z-index: 1;
+}
+
+#six-img-menu .bg-img .text-img {
+  font-size: 36px;
+  color: white;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  #six-img-menu .bg-img .text-img {
+    font-size: 12px;
+  }
+}
+

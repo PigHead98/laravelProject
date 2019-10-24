@@ -1,0 +1,19 @@
+#franchise .section-about-page-content-title {
+  margin: 25px 0;
+}
+
+#franchise .row-six-img-content .franchise-title {
+  margin-bottom: 25px;
+}
+
+#franchise .form-franchise {
+  font-family: "atwriter", sans-serif !important;
+}
+
+#franchise .form-franchise .form-control {
+  background-color: #fafafa;
+  font-size: 16px;
+  color: black;
+  border: 1px solid #cccccc;
+}
+

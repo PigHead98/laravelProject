@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'xfile';
+    src: url('/font/x-files.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'atwriter';
+    src: url('/font/atwriter.ttf') format('truetype');
+}
+
+body {
+    font-family: 'xfile', sans-serif !important;
+}

@@ -1,0 +1,22 @@
+.section-banner-experience #bg-saigon-centre {
+  background-image: url("/img/menu/banner.jpg");
+}
+
+.section-banner-experience #bg-saigon-centre .section-banner-text-title span {
+  margin: 25px 0;
+}
+
+#six-img-menu .content-menu-sg-centre {
+  font-size: 16px;
+  color: #a3a3a3;
+}
+
+#six-img-menu #bg-img-saigon-centre {
+  max-width: 960px;
+  max-height: 399px;
+}
+
+#six-img-menu .img-propaganda {
+  margin-top: 35px;
+}
+

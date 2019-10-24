@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/index', 'IndexController@index')->name('index');
+Route::get('/franchise', 'IndexController@showFranchise')->name('franchise');
+Route::get('/reservations', 'IndexController@showReservations')->name('reservations');
+Route::get('/contact-us', 'IndexController@showContact')->name('contact');
+//Route::get('/menu-han-thuyen', 'IndexController@showMenu')->name('menu-han-thuyen');
+Route::get('/menu-saigon-centre', 'IndexController@showMenu')->name('menu-saigon-centre');
