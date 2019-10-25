@@ -1,0 +1,61 @@
+.section-banner-experience #bg-reservations {
+  background-image: url("/img/home-page/reservation_banner.jpg");
+}
+
+.section-banner-experience #bg-reservations .section-banner-text-title {
+  margin-bottom: 25px;
+}
+
+#section-content-reservations .form-reservations {
+  font-family: "atwriter", sans-serif !important;
+}
+
+#section-content-reservations .form-reservations .form-control {
+  background-color: #fafafa;
+  font-size: 16px;
+  color: black;
+  border: 1px solid #cccccc;
+}
+
+#section-content-reservations .form-reservations .color-label {
+  color: #a3a3a3;
+}
+
+#section-content-reservations .form-reservations .btn-submit-reservations {
+  margin-bottom: 50px;
+  padding: 14px 35px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  #section-content-reservations .form-reservations .btn-submit-reservations {
+    padding: 12px 32px;
+  }
+}
+
+#section-content-reservations #call-for-party {
+  font-size: 22px;
+}
+
+@media (max-width: 576px) {
+  #section-content-reservations #call-for-party {
+    font-size: 16px;
+  }
+}
+
+#section-content-reservations .section-about-page-content-title {
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+@media (max-width: 576px) {
+  #section-content-reservations .section-about-page-content-title {
+    font-size: 18px;
+  }
+}
+
+#section-content-reservations .img-reservations {
+  margin: 25px 0;
+}
+

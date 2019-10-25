@@ -20,6 +20,10 @@
   font-weight: 300;
 }
 
+.section-footer .img-logo {
+  width: 30px;
+}
+
 @media (max-width: 576px) {
   .section-footer .col-footer {
     margin: 50px 0 0;

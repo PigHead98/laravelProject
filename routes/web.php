@@ -23,5 +23,8 @@ Route::get('/index', 'IndexController@index')->name('index');
 Route::get('/franchise', 'IndexController@showFranchise')->name('franchise');
 Route::get('/reservations', 'IndexController@showReservations')->name('reservations');
 Route::get('/contact-us', 'IndexController@showContact')->name('contact');
-//Route::get('/menu-han-thuyen', 'IndexController@showMenu')->name('menu-han-thuyen');
-Route::get('/menu-saigon-centre', 'IndexController@showMenu')->name('menu-saigon-centre');
+Route::get('/menu-han-thuyen', 'IndexController@showMenu')->name('menu-han-thuyen');
+Route::get('/menu-saigon-centre', 'IndexController@showMenuSG')->name('menu-saigon-centre');
+
+Route::post('/savefranchise', 'IndexController@infoFranchise')->name('savefranchise');
+Route::post('/savereservations', 'IndexController@infoReservations')->name('savereservations');

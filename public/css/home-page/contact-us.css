@@ -1,0 +1,30 @@
+.section-banner-experience #bg-contact-us {
+  background-image: url("/img/home-page/about_us.jpg");
+}
+
+.section-banner-experience #bg-contact-us .section-banner-text-title {
+  margin-bottom: 25px;
+}
+
+.section-content-contact-us {
+  margin: 50px 0;
+}
+
+@media (max-width: 769px) {
+  .section-content-contact-us {
+    margin: 20px 0;
+  }
+}
+
+.section-content-contact-us .section-content-contact-us {
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@media (max-width: 576px) {
+  .section-content-contact-us .section-content-contact-us {
+    font-size: 30px;
+  }
+}
+

@@ -1,0 +1,38 @@
+#custom-menu {
+    position: absolute;
+    background-color: transparent !important;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+
+    .custom-logo-menu {
+        top: 0;
+        max-height: 220px;
+
+        @media (max-width: 991px) {
+            max-height: 120px;
+        }
+
+        @media (max-width: 575px) {
+            max-height: 60px;
+        }
+
+    }
+
+    .bg-dropdown {
+        background: rgba(60,52,47,.9);
+
+        a:hover {
+            background-color: transparent;
+        }
+    }
+
+    .class-font-text-menu {
+        font-family: 'atwriter',sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+    }
+}

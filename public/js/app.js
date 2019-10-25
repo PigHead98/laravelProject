@@ -49499,6 +49499,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/home-page/contact-us.scss":
+/*!**************************************************!*\
+  !*** ./resources/sass/home-page/contact-us.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/home-page/franchise.scss":
 /*!*************************************************!*\
   !*** ./resources/sass/home-page/franchise.scss ***!
@@ -49514,6 +49525,17 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************!*\
   !*** ./resources/sass/home-page/home-page.scss ***!
   \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/home-page/reservations.scss":
+/*!****************************************************!*\
+  !*** ./resources/sass/home-page/reservations.scss ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49565,21 +49587,35 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/partials/menu.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/partials/menu.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/partials/footer.scss ./resources/sass/partials/main.scss ./resources/sass/menu/han-thuyen.scss ./resources/sass/menu/saigon-centre.scss ./resources/sass/home-page/home-page.scss ./resources/sass/home-page/franchise.scss ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/partials/main.scss ./resources/sass/partials/footer.scss ./resources/sass/partials/menu.scss ./resources/sass/menu/han-thuyen.scss ./resources/sass/menu/saigon-centre.scss ./resources/sass/home-page/home-page.scss ./resources/sass/home-page/franchise.scss ./resources/sass/home-page/reservations.scss ./resources/sass/home-page/contact-us.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\partials\footer.scss */"./resources/sass/partials/footer.scss");
 __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\partials\main.scss */"./resources/sass/partials/main.scss");
+__webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\partials\footer.scss */"./resources/sass/partials/footer.scss");
+__webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\partials\menu.scss */"./resources/sass/partials/menu.scss");
 __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\menu\han-thuyen.scss */"./resources/sass/menu/han-thuyen.scss");
 __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\menu\saigon-centre.scss */"./resources/sass/menu/saigon-centre.scss");
 __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\home-page\home-page.scss */"./resources/sass/home-page/home-page.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\home-page\franchise.scss */"./resources/sass/home-page/franchise.scss");
+__webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\home-page\franchise.scss */"./resources/sass/home-page/franchise.scss");
+__webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\home-page\reservations.scss */"./resources/sass/home-page/reservations.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\propagandabistros\resources\sass\home-page\contact-us.scss */"./resources/sass/home-page/contact-us.scss");
 
 
 /***/ })

@@ -1,0 +1,42 @@
+#custom-menu {
+  position: absolute;
+  background-color: transparent !important;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#custom-menu .custom-logo-menu {
+  top: 0;
+  max-height: 220px;
+}
+
+@media (max-width: 991px) {
+  #custom-menu .custom-logo-menu {
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  #custom-menu .custom-logo-menu {
+    max-height: 60px;
+  }
+}
+
+#custom-menu .bg-dropdown {
+  background: rgba(60, 52, 47, 0.9);
+}
+
+#custom-menu .bg-dropdown a:hover {
+  background-color: transparent;
+}
+
+#custom-menu .class-font-text-menu {
+  font-family: "atwriter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+

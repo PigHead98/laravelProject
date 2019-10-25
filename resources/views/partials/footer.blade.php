@@ -30,6 +30,21 @@
                 <h3 class="section-footer-title">
                     CONNECT WITH US
                 </h3>
+                <a target="_blank" href="https://www.facebook.com/propagandasaigon/">
+                    <img src="/img/footer/fb.png" alt="img" class="img-fluid" width="30px">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/propaganda_bistro/">
+                    <img src="/img/footer/ins.png" alt="img" class="img-fluid img-logo">
+                </a>
+                <a target="_blank" href="https://www.tripadvisor.com/Restaurant_Review-g293925-d6360239-Reviews-Propaganda_Restaurant-Ho_Chi_Minh_City.html">
+                    <img src="/img/footer/tripa.png" alt="img" class="img-fluid img-logo">
+                </a>
+                <a target="_blank" href="https://www.tripexpert.com/ho-chi-minh-city/restaurants/propaganda-restaurant">
+                    <img src="/img/footer/tripexpert.png" alt="img" class="img-fluid img-logo">
+                </a>
+                <a target="_blank" href="https://www.tripadvisor.co.uk/Restaurant_Review-g293925-d6360239-Reviews-Propaganda_Bistro-Ho_Chi_Minh_City.html">
+                    <img src="/img/footer/screenshot_2.jpg" alt="img" class="mx-auto my-3 img-fluid d-block" width="152px" height="140px">
+                </a>
             </div>
         </div>
     </div>

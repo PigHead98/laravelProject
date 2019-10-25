@@ -13,8 +13,11 @@ class IndexController extends Controller
 
     public function showMenu(Request $request)
     {
- //       if ($request->id)
-        //return view('index/menu.han-thuyen');
+        return view('index/menu.han-thuyen');
+    }
+
+    public function showMenuSG(Request $request)
+    {
         return view('index/menu.saigon-centre');
     }
 
@@ -31,5 +34,15 @@ class IndexController extends Controller
     public function showContact(Request $request)
     {
         return view('index/contact-us');
+    }
+
+    public function infoFranchise(Request $request)
+    {
+        dd($request->all());
+    }
+
+    public function infoReservations(Request $request)
+    {
+        dd($request->all());
     }
 }

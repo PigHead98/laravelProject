@@ -12,10 +12,18 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .sass('resources/sass/partials/footer.scss', 'public/css/partials')
-   .sass('resources/sass/partials/main.scss', 'public/css/partials')
-   .sass('resources/sass/menu/han-thuyen.scss', 'public/css/menu')
-   .sass('resources/sass/menu/saigon-centre.scss', 'public/css/menu')
-   .sass('resources/sass/home-page/home-page.scss', 'public/css/home-page')
-   .sass('resources/sass/home-page/franchise.scss', 'public/css/home-page');
+    .sass('resources/sass/app.scss', 'public/css')
+
+    .sass('resources/sass/partials/main.scss', 'public/css/partials')
+    .sass('resources/sass/partials/footer.scss', 'public/css/partials')
+    .sass('resources/sass/partials/menu.scss', 'public/css/partials')
+
+
+    .sass('resources/sass/menu/han-thuyen.scss', 'public/css/menu')
+    .sass('resources/sass/menu/saigon-centre.scss', 'public/css/menu')
+
+    .sass('resources/sass/home-page/home-page.scss', 'public/css/home-page')
+    .sass('resources/sass/home-page/franchise.scss', 'public/css/home-page')
+    .sass('resources/sass/home-page/reservations.scss', 'public/css/home-page')
+    .sass('resources/sass/home-page/contact-us.scss', 'public/css/home-page')
+;
