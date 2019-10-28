@@ -27,32 +27,51 @@
                     <h3 class="section-content-contact-us text-uppercase text-center">
                         MAKE A RESERVATION
                     </h3>
-                    <form class="form-reservations" method="post" action="{{route('savereservations')}}">
+                    @if (session('status'))
+                        <div class="alert alert-success font-atwriter">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+                    <form id="form-reservations" class="form-reservations" method="post" action="{{route('savereservations')}}">
                         @csrf
                         <div class="form-group">
                             <label class="color-label" for="name">Name *</label>
                             <input type="text" class="form-control" required name="name" id="name">
+                            @if(!empty($errors->first('name')))
+                            <div class="alert alert-danger" role="alert">
+                                {{$errors->first('name')}}
+                            </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label class="color-label" for="email">Email *</label>
                             <input type="email" class="form-control" required name="email" id="email" >
+                            @if(!empty($errors->first('email')))
+                            <div class="alert alert-danger" role="alert">
+                                {{$errors->first('email')}}
+                            </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label class="color-label" for="phone">Phone *</label>
                             <input type="number" class="form-control" required name="phone" id="phone" >
+                            @if(!empty($errors->first('phone')))
+                            <div class="alert alert-danger" role="alert">
+                                {{$errors->first('phone')}}
+                            </div>
+                            @endif
                         </div>
                         <div class="form-row form-group justify-content-between ">
                             <div class="col-md-6 form-group mb-md-0">
                                 <label class="color-label" for="location">Location *</label>
-                                <select id="location" class="form-control">
-                                    <option selected>Choose location...</option>
+                                <select id="location" name="location" class="form-control">
                                     <option value="Propaganda Saigon Centre, D1">Propaganda Saigon Centre, D1</option>
                                     <option value="Propaganda Han Thuyen, D1">Propaganda Han Thuyen, D1</option>
                                 </select>
                             </div>
                             <div class="col-md-5 form-group mb-0 text-md-right">
                                 <label class="color-label" for="event"> Event </label>
-                                <select id="event" class="form-control">
+                                <select id="event" name="event" class="form-control">
                                     <option value="- None -" selected >Event</option>
                                     <option value="80 Wines">80 Wines</option>
                                     <option value="Christmas">Christmas</option>
@@ -64,22 +83,36 @@
                             <div class="col-md-6 form-group mb-md-0">
                                 <label class="color-label" for="date">Date *</label>
                                 <input type="date" class="form-control" required name="date" id="date" >
+                                @if(!empty($errors->first('date')))
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('date')}}
+                                </div>
+                                @endif
                             </div>
                             <div class="col-md-5 form-group mb-0 text-md-right">
                                 <label class="color-label" for="time">Arrival Time *</label>
                                 <input type="time" class="form-control" required name="time" id="time" >
+                                @if(!empty($errors->first('time')))
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('time')}}
+                                </div>
+                                @endif
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="color-label" for="pax">Pax (Number of guests) *</label>
                             <input type="number" class="form-control" required name="pax" id="pax" >
+                            @if(!empty($errors->first('pax')))
+                            <div class="alert alert-danger" role="alert">
+                                {{$errors->first('pax')}}
+                            </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label class="color-label" for="specialrequest">Special Request </label>
                             <textarea class="form-control" id="specialrequest" name="specialrequest" rows="3"></textarea>
                         </div>
-
-                        <div class="g-recaptcha" data-sitekey="6Ldpd78UAAAAAOU_LmuYeNyhivmZwm1kjYE930PA"></div>
+                        <input type="hidden" id="google_recaptcha_token" name="google_recaptcha_token" >
                         <div class="text-center">
                             <button type="submit" class="btn btn-dark btn-submit-reservations">Submit</button>
                         </div>

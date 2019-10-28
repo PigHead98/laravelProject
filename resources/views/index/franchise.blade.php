@@ -59,26 +59,50 @@
             <div class="row">
                 <div class="col-12 col-md-10 mx-auto">
                     <h3 class="section-about-page-content-title text-center">CONTACT US</h3>
-                    <form class="form-franchise" method="post" action="{{route('savefranchise')}}">
+                    @if (session('status-contact'))
+                        <div class="alert alert-success font-atwriter">
+                            {{ session('status-contact') }}
+                        </div>
+                    @endif
+                    <form id="form-franchise" class="form-franchise" method="post" action="{{route('savefranchise')}}">
                         @csrf
                         <div class="form-group">
                             <label class="color-label" for="name">Name *</label>
                             <input type="text" class="form-control" required name="name" id="name">
+                            @if(!empty($errors->first('name')))
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('name')}}
+                                </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label class="color-label" for="email">Email Address *</label>
                             <input type="email" class="form-control" required name="email" id="email" >
+                            @if(!empty($errors->first('email')))
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('email')}}
+                                </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label class="color-label" for="subject">Subject *</label>
                             <input type="text" class="form-control" required name="subject" id="subject" >
+                            @if(!empty($errors->first('subject')))
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('subject')}}
+                                </div>
+                            @endif
                         </div>
                         <div class="form-group">
                             <label class="color-label" for="message">Message *</label>
                             <textarea class="form-control" id="message" required name="message" rows="3"></textarea>
+                            @if(!empty($errors->first('message')))
+                                <div class="alert alert-danger" role="alert">
+                                    {{$errors->first('message')}}
+                                </div>
+                            @endif
                         </div>
-
-                        <div class="g-recaptcha" data-sitekey="6Lc7er8UAAAAAJhNRdGe82Hj3vywMk7cA9ZjVEsz"></div>
+                        <input type="hidden" id="google_recaptcha_token_franchise" name="google_recaptcha_token" >
                         <div class="text-center">
                             <button type="submit" class="btn btn-dark">Submit</button>
                         </div>

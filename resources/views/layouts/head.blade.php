@@ -11,3 +11,5 @@
 <link href="{{ asset('css/menu/han-thuyen.css') }}" rel="stylesheet">
 <link href="{{ asset('css/menu/saigon-centre.css') }}" rel="stylesheet">
 
+<script src="https://www.google.com/recaptcha/api.js?render=6Ldpd78UAAAAAOU_LmuYeNyhivmZwm1kjYE930PA"></script>
+

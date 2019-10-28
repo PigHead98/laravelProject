@@ -9,6 +9,10 @@
 }
 
 body {
-  font-family: "xfile", sans-serif !important;
+  font-family: "xfile", sans-serif;
+}
+
+body .font-atwriter {
+  font-family: "atwriter", sans-serif !important;
 }
 

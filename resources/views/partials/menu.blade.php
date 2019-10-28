@@ -1,6 +1,6 @@
-<nav id="custom-menu" class="navbar navbar-expand-md navbar-light bg-light">
+<nav id="custom-menu" class="navbar navbar-expand-md navbar-dark bg-dark">
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="{{route('index')}}">
         <img src="/img/menu/logo.png" alt="img" class="position-absolute custom-logo-menu img-fluid">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">

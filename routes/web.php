@@ -12,14 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index.index');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('admin');
 
-Route::get('/index', 'IndexController@index')->name('index');
+Route::get('/vietnamese-bistro', 'IndexController@index')->name('index');
 Route::get('/franchise', 'IndexController@showFranchise')->name('franchise');
 Route::get('/reservations', 'IndexController@showReservations')->name('reservations');
 Route::get('/contact-us', 'IndexController@showContact')->name('contact');
