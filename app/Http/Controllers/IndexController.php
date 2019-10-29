@@ -10,6 +10,8 @@ use App\Mail\SendMail;
 
 class IndexController extends Controller
 {
+    protected $secret = "6Ldpd78UAAAAACvd2cieSwhc8EieD2m-3qJXNFmA";
+
     public function index()
     {
         return view('index.index');
@@ -55,25 +57,10 @@ class IndexController extends Controller
             return redirect()->back()->withErrors($check)
                 ->withInput();
         } else {
-            $url  = 'https://www.google.com/recaptcha/api/siteverify';
-            $data = [
-                'secret'   => "6Ldpd78UAAAAACvd2cieSwhc8EieD2m-3qJXNFmA",
-                'response' => "$request->google_recaptcha_token",
-            ];
+            $secret  = $this->secret;
+            $response = $request->google_recaptcha_token;
 
-            $options = [
-                'http' => [
-                    'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-                    'method'  => 'POST',
-                    'content' => http_build_query($data),
-                ],
-            ];
-
-            $context      = stream_context_create($options);
-            $response     = file_get_contents($url, false, $context);
-            $responseKeys = json_decode($response, true);
-
-            if ($responseKeys['success']) {
+            if ($this->responRecapt($secret,$response)) {
                 Mail::to('reystay.rz@gmail.com')->send(new SendMail($datasave,'form-mail.franchise'));
                     return redirect()->back()->with('status-contact', 'Profile sent!');
             }
@@ -100,28 +87,12 @@ class IndexController extends Controller
             return redirect()->back()->withErrors($check)
                 ->withInput();
         } else {
-            $url  = 'https://www.google.com/recaptcha/api/siteverify';
-            $data = [
-                'secret'   => "6Ldpd78UAAAAACvd2cieSwhc8EieD2m-3qJXNFmA",
-                'response' => "$request->google_recaptcha_token",
-            ];
+            $secret  = $this->secret;
+            $response = $request->google_recaptcha_token;
 
-            $options = [
-                'http' => [
-                    'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-                    'method'  => 'POST',
-                    'content' => http_build_query($data),
-                ],
-            ];
-
-            $context      = stream_context_create($options);
-            $response     = file_get_contents($url, false, $context);
-            $responseKeys = json_decode($response, true);
-
-            if ($responseKeys['success']) {
+            if ($this->responRecapt($secret,$response)) {
                 Mail::to('reystay.rz@gmail.com')->send(new SendMail($datasave,'form-mail.reservations'));
                 return redirect()->back()->with('status', 'Profile sent!');
-
             } else
                 return redirect()->back()->with('status', 'Can not send, it is spam!');
             ////        dd($responseKeys);
@@ -129,6 +100,30 @@ class IndexController extends Controller
 
     }
 
+    public function responRecapt($secret,$response)
+    {
+        $url  = 'https://www.google.com/recaptcha/api/siteverify';
+        $data = [
+            'secret'   => $secret,
+            'response' => $response,
+        ];
+
+        $options = [
+            'http' => [
+                'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method'  => 'POST',
+                'content' => http_build_query($data),
+            ],
+        ];
+
+        $context      = stream_context_create($options);
+        $response     = file_get_contents($url, false, $context);
+        $responseKeys = json_decode($response, true);
+
+        if ($responseKeys['success'])
+            return true;
+        return false;
+    }
 //    public function saveInfoFra($data)
 //    {
 //        return DB::table('propa_franchise')->insertGetId([
